@@ -1,0 +1,27 @@
+participants:
+  - el_type: nethermind
+    cl_type: lodestar
+    snooper_enabled: false
+  #   # el_proxy_enabled: true
+  # - el_type: nethermind
+  #   cl_type: lighthouse
+  #   validator_count: 0
+  #   use_separate_vc: true
+  #   snooper_enabled: false
+  #   el_proxy_enabled: false
+
+snooper_enabled: false
+network_params:
+  preset: minimal
+  network: kurtosis
+port_publisher:
+  nat_exit_ip: KURTOSIS_IP_ADDR_PLACEHOLDER
+  el:
+    enabled: true
+    public_port_start: 8645
+  cl:
+    enabled: true
+    public_port_start: 4100
+  vc:
+    enabled: true
+    public_port_start: 4200
